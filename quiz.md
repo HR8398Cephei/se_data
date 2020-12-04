@@ -164,11 +164,13 @@ get attend_quiz?courseId=
 }
 ```
 
+<h1>12.5修改</h1>
+
 # 老师查看某门课某次小测所有学生的成绩（分页）
 
 get quiz_submission/
 
-由于参加一次小测的人数可能很多，所以这里选择分页participators按pageSize和pageNum返回
+由于参加一次小测的人数可能很多，所以这里选择分页participants按pageSize和pageNum返回
 
 ```json
 {
@@ -183,7 +185,7 @@ get quiz_submission/
     chapter,
     description,
   },
-  participators: [
+  participants: [
     {
       userId,
       email,
@@ -236,3 +238,5 @@ get
   ]
 }
 ```
+
+<h1>12.5修改结束</h1>
